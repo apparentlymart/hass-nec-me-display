@@ -1,0 +1,13 @@
+{
+  "domain": "nec_me_display",
+  "name": "NEC M-Series and ME-Series Displays",
+  "config_flow": true,
+  "codeowners": ["@apparentlymart"],
+  "dependencies": ["sensor"],
+  "documentation": "https://github.com/apparentlymart/hass-nec-me-display",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/apparentlymart/hass-nec-me-display/issues",
+  "requirements": ["necme==0.1.0"],
+  "version": "0.1.0"
+}
