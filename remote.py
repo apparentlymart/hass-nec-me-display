@@ -49,11 +49,13 @@ class NECDisplayRemote(NECDisplayEntity, RemoteEntity):
         """Command the display to turn off."""
         new_mode = await self._controller.async_turn_off()
         self._attr_is_on = _power_is_on(new_mode)
+        self.async_schedule_update_ha_state()
 
     async def async_turn_on(self, **kwargs: Any) -> None:
         """Command the display to turn off."""
         new_mode = await self._controller.async_turn_on()
         self._attr_is_on = _power_is_on(new_mode)
+        self.async_schedule_update_ha_state()
 
 
 def _power_is_on(mode: necme.PowerMode) -> bool:
