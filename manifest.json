@@ -3,7 +3,7 @@
   "name": "NEC M-Series and ME-Series Displays",
   "config_flow": true,
   "codeowners": ["@apparentlymart"],
-  "dependencies": ["sensor"],
+  "dependencies": ["media_player", "remote"],
   "documentation": "https://github.com/apparentlymart/hass-nec-me-display",
   "integration_type": "device",
   "iot_class": "local_polling",
