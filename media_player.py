@@ -94,4 +94,4 @@ class NECDisplayPlayer(NECDisplayEntity, MediaPlayerEntity):
 def _player_state(mode: necme.PowerMode) -> MediaPlayerState:
     if mode is necme.PowerMode.ON:
         return MediaPlayerState.ON
-    return MediaPlayerState.STANDBY
+    return MediaPlayerState.OFF
